@@ -17,6 +17,7 @@ set(COMMON_CXX_FLAGS
   "-Wdouble-promotion"
   "-Wformat=2"
   "-Wimplicit-fallthrough"
+  "-Wreturn-local-addr"
 )
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
