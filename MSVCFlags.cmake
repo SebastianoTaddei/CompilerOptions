@@ -1,6 +1,6 @@
 include_guard()
 
-set(COMPILER_FLAGS
+list(APPEND COMPILER_OPTIONS
   "/WX"
   "/permissive"
   "/W4"
