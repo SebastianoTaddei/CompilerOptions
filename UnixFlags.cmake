@@ -1,6 +1,6 @@
 include_guard()
 
-set(COMMON_CXX_FLAGS
+set(COMPILER_FLAGS
   "-Werror"
   "-pedantic"
   "-Wall"
@@ -21,7 +21,7 @@ set(COMMON_CXX_FLAGS
 )
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-  list(APPEND COMMON_CXX_FLAGS
+  list(APPEND COMPILER_FLAGS
     "-Wmisleading-indentation"
     "-Wduplicated-cond"
     "-Wduplicated-branches"
@@ -30,10 +30,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     "-Wuseless-cast"
   )
 elseif(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-  list(APPEND COMMON_CXX_FLAGS
+  list(APPEND COMPILER_FLAGS
     # "-Wlifetime" will come with future versions of clang
   )
 endif()
-
-add_compile_options(${COMMON_CXX_FLAGS})
-

@@ -1,6 +1,6 @@
 include_guard()
 
-set(MSVC_COMPILE_FLAGS
+set(COMPILER_FLAGS
   "/WX"
   "/permissive"
   "/W4"
@@ -24,6 +24,3 @@ set(MSVC_COMPILE_FLAGS
   "/w14906"
   "/w14928"
 )
-
-add_compile_options(${MSVC_COMPILE_FLAGS})
-
