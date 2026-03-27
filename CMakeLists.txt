@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-function(myproj_apply_options target)
+function(target_apply_options target)
   set(COMPILER_OPTIONS)
   if(MSVC)
     list(APPEND COMPILER_OPTIONS
